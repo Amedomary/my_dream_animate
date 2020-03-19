@@ -14,6 +14,19 @@
 
 <body>
 
+  <img class="image-bg" src="8.jpg" alt="bg">
+
+  <svg id="svg-level-2" width="100%" height="100%" viewBox="0 0 100% 100%" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <rect x="380" width="389" height="420" fill="#439EAA" />
+
+    <rect x="400" width="1" height="100%" fill="#DADADA" />
+    <rect x="450" width="1" height="100%" fill="#DADADA" />
+    <rect x="480" width="1" height="100%" fill="#DADADA" />
+    <rect x="620" width="1" height="100%" fill="#DADADA" />
+  </svg>
+
+
   <main class="mainLayout">
     <div class="row level-1">
       <div class="logo">
@@ -21,29 +34,36 @@
         <p class="logo-h2">by amedomary</p>
       </div>
 
-      <ul>
+      <ul class="top-nav">
         <li>First</li>
         <li>Second</li>
         <li>Third</li>
       </ul>
 
-      <div class="menu">[_]</div>
+      <div class="menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="8" width="8" height="8" fill="white" />
+          <rect x="8" y="24" width="8" height="8" fill="white" />
+          <rect x="24" y="8" width="8" height="8" fill="white" />
+          <rect x="24" y="24" width="8" height="8" fill="white" />
+        </svg>
+      </div>
     </div>
 
     <div class="row level-2">
-      <ul>
+      <ul class="main-nav">
         <li>Main</li>
         <li>Gallery</li>
         <li>About</li>
       </ul>
 
-      <span>Open map</span>
+      <span class="map-link">Open map</span>
     </div>
 
     <div class="row level-3">
       <h1>Siberia</h1>
 
-      <ul>
+      <ul class="filter-list">
         <li>Mountains</li>
         <li>Forest</li>
         <li>Sand</li>
@@ -52,21 +72,65 @@
 
     <div class="row level-4">
 
-      <div class="card">
-        <div class="card_bg"></div>
-        <p class="card_text-1">Baikal lake</p>
-        <p class="card_text-2">53.054977, 107.535205</p>
-        <p class="card_text-3">SOME INFO</p>
+      <div class="scroll-box">
+        <p class="scroll-text">Scroll</p>
+        <svg width="105" height="24" viewBox="0 0 105 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.939339 10.9393C0.353554 11.5251 0.353554 12.4749 0.939339 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939339 10.9393ZM105 10.5L2 10.5V13.5L105 13.5V10.5Z" fill="white"/>
+        </svg>
       </div>
 
+      <div class="main-list">
+        <div class="card">
+          <div class="card_bg">
+            <img class="card_bg-photo" src="12.jpg" alt="">
+          </div>
+          <p class="card_text-1">Baikal lake</p>
+          <p class="card_text-2">53.054977, 107.535205</p>
+          <p class="card_text-3">SOME INFO</p>
+        </div>
+
+        <div class="card">
+          <div class="card_bg">
+            <img class="card_bg-photo" src="13.jpg" alt="">
+          </div>
+          <p class="card_text-1">Baikal lake</p>
+          <p class="card_text-2">53.054977, 107.535205</p>
+          <p class="card_text-3">SOME INFO</p>
+        </div>
+
+        <div class="card">
+          <div class="card_bg">
+            <img class="card_bg-photo" src="14.jpg" alt="">
+          </div>
+          <p class="card_text-1">Baikal lake</p>
+          <p class="card_text-2">53.054977, 107.535205</p>
+          <p class="card_text-3">SOME INFO</p>
+        </div>
+
+        <div class="card">
+          <div class="card_bg">
+            <img class="card_bg-photo" src="15.jpg" alt="">
+          </div>
+          <p class="card_text-1">Baikal lake</p>
+          <p class="card_text-2">53.054977, 107.535205</p>
+          <p class="card_text-3">SOME INFO</p>
+        </div>
+      </div>
     </div>
 
     <div class="row level-5">
-      <span>Russia</span>
+      <span class="country">Russia</span>
 
-      <span>DOTStodo</span>
+      <div>
+        <svg width="188" height="12" viewBox="0 0 188 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="12" height="12" rx="2" fill="white" />
+          <rect x="136" width="12" height="12" rx="2" fill="white" />
+          <rect x="156" width="12" height="12" rx="2" fill="white" />
+          <rect x="176" width="12" height="12" rx="2" fill="white" />
+        </svg>
+      </div>
 
-      <span>ⓒ 2020</span>
+      <span class="year">ⓒ 2020</span>
     </div>
   </main>
 

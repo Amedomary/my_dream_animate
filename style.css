@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -17,7 +19,16 @@ body {
   background-color: #232425;
 }
 
-p,ul {
+.image-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .5;
+}
+
+p,
+ul {
   margin: 0;
 }
 
@@ -37,12 +48,19 @@ h1 {
   font-weight: bold;
 }
 
+#svg-level-2 {
+  position: absolute;
+  z-index: 2;
+}
+
 .mainLayout {
   height: 100%;
-  padding: 72px;
+  padding: 64px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
+  position: relative;
+  z-index: 4;
 }
 
 .row {
@@ -62,21 +80,21 @@ h1 {
 
 .level-3 {
   padding-left: 220px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .level-4 {
-  padding-left: 220px;
+  position: relative;
 }
 
 .level-5 {
   margin-top: auto;
 }
 
-
 .logo-h1 {
   font-size: 30px;
   font-weight: bold;
+  line-height: 34px;
 }
 .logo-h2 {
   font-style: normal;
@@ -84,33 +102,99 @@ h1 {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.105em;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 0.6;
+  font-weight: 100;
 }
 
+.top-nav {
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: 28px;
+}
+.top-nav li {
+  margin-left: 24px;
+}
+
+.main-nav {
+  font-weight: 600;
+}
+.main-nav li {
+  margin-right: 48px;
+}
+
+.map-link {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-list {
+  margin-top: 25px;
+}
+.filter-list li {
+  margin-left: 48px;
+}
+
+.main-list {
+  padding-left: 196px;
+  display: flexmain-list;
+}
+
+.scroll-box {
+  position: absolute;
+  left: 0;
+  margin-top: 20px;
+}
+.scroll-text {
+  text-align: right;
+  margin-bottom: 8px;
+  font-weight: 100;
+}
 
 .card {
   width: 254px;
   height: 304px;
   padding: 0 0 24px 26px;
   position: relative;
+  display: inline-block;
+  margin-right: 48px;
 }
 .card_bg {
   height: 100%;
   width: 100%;
-  background-color: lightcoral;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
+  overflow: hidden;
+}
+.card_bg-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .card_text-1 {
   position: absolute;
   left: 0;
   top: 186px;
+  text-shadow: 2px 2px 4px #000000;
 }
 .card_text-2 {
   position: absolute;
   top: 212px;
   left: 0;
+  text-shadow: 2px 2px 4px #000000;
 }
 .card_text-3 {
   position: absolute;
   left: 26px;
+  font-weight: 100;
+  bottom: -1px;
+}
+
+.country {
+  font-weight: 100;
+}
+
+.year {
+  font-weight: 100;
 }
